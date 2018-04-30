@@ -223,6 +223,846 @@
           "office_hours_extra": ""
         }
       ]
+    },
+    {
+      "taID": "9",
+      "courseID": "3",
+      "name": "Abdel Naseer, Sumaiya",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "9:00am - 10:30am",
+          "office_hours_extra": "3:00pm - 4:30pm"
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "9:00am - 12:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "10",
+      "courseID": "4",
+      "name": "Khan, Mohammed Abdul Hafeez",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "8:00am - 11:00am",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "8:00am - 11:00am",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "11",
+      "courseID": "5",
+      "name": "Mallineni, Bhavana",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "10:45am - 12:45pm",
+          "office_hours_extra": "2:00pm - 3:00pm"
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "10:45am - 12:45pm",
+          "office_hours_extra": "2:00pm - 3:00pm"
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "12",
+      "courseID": "6",
+      "name": "Daniel, Baker",
+      "office_room": "FR 230",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "9:00am - 9:50am",
+          "office_hours_extra": "12:00pm - 1:50pm"
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "9:00am - 9:50am",
+          "office_hours_extra": "12:00pm - 1:50pm"
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "9:00am - 9:50am",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "13",
+      "courseID": "7",
+      "name": "Patlolla, Akhil Reddy",
+      "office_room": "FR 230",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "10:30am - 12:30pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "10:30am - 12:30pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "10:30am - 12:30pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "14",
+      "courseID": "8",
+      "name": "Swanson, Nicholas",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Tuesday",
+          "office_hours": "2:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "2:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "2:00pm - 3:00pm",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "15",
+      "courseID": "9",
+      "name": "Dick, Zachariah",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "16",
+      "courseID": "10",
+      "name": "Scheel, Andrew",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "12:15pm - 1:45pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "12:15pm - 1:45pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "12:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "17",
+      "courseID": "11",
+      "name": "Bayron, Audi James",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "9:00am - 10:30am",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "12:15pm - 1:45pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "12:15pm - 3:15pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "18",
+      "courseID": "12",
+      "name": "Chitre, Saurabh",
+      "office_room": "PM 362",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Tuesday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "19",
+      "courseID": "13",
+      "name": "Devarapalli, Bhaskara Reddy",
+      "office_room": "PM 362",
+      "office_days": [
+        {
+          "office_day": "Wednesday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "1:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "20",
+      "courseID": "14",
+      "name": "Rajendran, Jagadeesan",
+      "office_room": "PM 362",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "2:15pm - 5:15pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "2:15pm - 5:15pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "21",
+      "courseID": "15",
+      "name": "Gomez, Jose Javier",
+      "office_room": "PM 362",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "12:00pm - 2:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "12:00pm - 2:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "22",
+      "courseID": "16",
+      "name": "Patel, Visarg Pareshkumar",
+      "office_room": "PM 362",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "12:00pm - 2:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "11:00am - 1:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "12:00pm - 2:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "23",
+      "courseID": "18",
+      "name": "Akrula, Srikar",
+      "office_room": "PM 356",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "3:00pm - 6:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "3:00pm - 6:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "10:00am - 12:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "24",
+      "courseID": "18",
+      "name": "Cordell, Britany",
+      "office_room": "FR 228",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "5:00pm - 7:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Tuesday",
+          "office_hours": "1:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "5:00pm - 7:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "1:00pm - 3:00pm",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "25",
+      "courseID": "19",
+      "name": "Gregg, Christian William",
+      "office_room": "PM 356",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "1:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "3:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "1:00pm - 3:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "26",
+      "courseID": "20",
+      "name": "Hassan, Mohammed Ishaan",
+      "office_room": "PM 356",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "9:00am - 12:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "9:00am - 12:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "27",
+      "courseID": "21",
+      "name": "Pasham, Shivasupraj",
+      "office_room": "PM 356",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "28",
+      "courseID": "22",
+      "name": "Sen, Rajarshi",
+      "office_room": "PM 356",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "29",
+      "courseID": "23",
+      "name": "Vayalpati, Yaswanth Reddy",
+      "office_room": "PM 356",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "9:30am - 12:30pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "9:30am - 12:30pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "30",
+      "courseID": "24",
+      "name": "Boddeda, Jyothsna Priyanka",
+      "office_room": "FR 228",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "2:00pm - 4:15pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "2:00pm - 4:15pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Friday",
+          "office_hours": "9:15am - 10:45am",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "31",
+      "courseID": "24",
+      "name": "Gogineni, Chaithanya Krishna",
+      "office_room": "PM 362",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "32",
+      "courseID": "25",
+      "name": "Datla, Venkata Surya Mounica",
+      "office_room": "FR 227",
+      "office_days": [
+        {
+          "office_day": "Tuesday",
+          "office_hours": "1:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "1:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "33",
+      "courseID": "25",
+      "name": "Kondapuram, Priyanka",
+      "office_room": "FR 227",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "1:50pm - 4:50pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "1:50pm - 4:50pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "34",
+      "courseID": "26",
+      "name": "Durham, Robert",
+      "office_room": "FR 226",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "10:00am - 11:00am",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Tuesday",
+          "office_hours": "12:00pm - 2:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "10:00am - 11:00am",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Thursday",
+          "office_hours": "12:00pm - 2:00pm",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "35",
+      "courseID": "27",
+      "name": "Sandadi, Dinesh Reddy",
+      "office_room": "FR 226",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "2:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "36",
+      "courseID": "28",
+      "name": "Lavin, Eric",
+      "office_room": "FR 225",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Tuesday",
+          "office_hours": "12:30pm - 1:30pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "1:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "37",
+      "courseID": "29",
+      "name": "Rayala, Lakshmi Chaitanya",
+      "office_room": "FR 225",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "2:00pm - 4:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Tuesday",
+          "office_hours": "3:00pm - 5:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "10:00am - 12:00pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
+    },
+    {
+      "taID": "38",
+      "courseID": "30",
+      "name": "Devang, Nithin",
+      "office_room": "FR 248",
+      "office_days": [
+        {
+          "office_day": "Monday",
+          "office_hours": "1:45pm - 4:45pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "Wednesday",
+          "office_hours": "1:45pm - 4:45pm",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        },
+        {
+          "office_day": "",
+          "office_hours": "",
+          "office_hours_extra": ""
+        }
+      ]
     }
   ]
 }

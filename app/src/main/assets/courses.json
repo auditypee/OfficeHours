@@ -6,7 +6,7 @@
       "name": "Introduction to C++",
       "number": "240-0001",
       "room": "MO AUD",
-      "day": "Monday Wednesday",
+      "day": "M W",
       "hours": "1:30pm - 2:45pm"
     },
     {
@@ -15,8 +15,260 @@
       "name": "Introduction to C++",
       "number": "240-0002",
       "room": "FR 143",
-      "day": "Tuesday Thursday",
+      "day": "T TH",
       "hours": "3:30pm - 4:45pm"
+    },
+    {
+      "courseID": "3",
+      "instructorID": "14",
+      "name": "Intermediate Programming in C++",
+      "number": "241-0001",
+      "room": "PM 251",
+      "day": "M W F",
+      "hours": "9:00am - 9:50am"
+    },
+    {
+      "courseID": "4",
+      "instructorID": "14",
+      "name": "Intermediate Programming in C++",
+      "number": "241-0002",
+      "room": "PM 251",
+      "day": "M W F",
+      "hours": "11:00am - 11:50am"
+    },
+    {
+      "courseID": "5",
+      "instructorID": "16",
+      "name": "Intermediate Programming in C++",
+      "number": "241-0003",
+      "room": "PM 251",
+      "day": "T TH",
+      "hours": "9:30am - 10:45am"
+    },
+    {
+      "courseID": "6",
+      "instructorID": "17",
+      "name": "iOS Mobile Programming",
+      "number": "321-00P1",
+      "room": "CO 106",
+      "day": "T TH",
+      "hours": "11:00am - 12:15pm"
+    },
+    {
+      "courseID": "7",
+      "instructorID": "4",
+      "name": "Android Mobile Programming",
+      "number": "322-00P1",
+      "room": "CO 106",
+      "day": "M W",
+      "hours": "9:00am - 10:15am"
+    },
+    {
+      "courseID": "8",
+      "instructorID": "12",
+      "name": "Unix Systems and Networks",
+      "number": "330-0001",
+      "room": "PM 251",
+      "day": "M W F",
+      "hours": "10:00am -10:50am"
+    },
+    {
+      "courseID": "9",
+      "instructorID": "7",
+      "name": "Unix Systems and Networks",
+      "number": "330-0002",
+      "room": "PM 252",
+      "day": "T TH",
+      "hours": "9:30am - 10:45am"
+    },
+    {
+      "courseID": "10",
+      "instructorID": "13",
+      "name": "Unix Systems and Networks",
+      "number": "330-0003",
+      "room": "PM 251",
+      "day": "T TH",
+      "hours": "12:30pm - 1:45pm"
+    },
+    {
+      "courseID": "11",
+      "instructorID": "9",
+      "name": "Unix Systems and Networks",
+      "number": "330-0004",
+      "room": "PM 251",
+      "day": "T TH",
+      "hours": "2:00pm - 3:15pm"
+    },
+    {
+      "courseID": "12",
+      "instructorID": "1",
+      "name": "Advance Data Structures in C++",
+      "number": "340-0001",
+      "room": "CO 106",
+      "day": "M W",
+      "hours": "10:30am - 11:45am"
+    },
+    {
+      "courseID": "13",
+      "instructorID": "12",
+      "name": "Advance Data Structures in C++",
+      "number": "340-0002",
+      "room": "PM 253",
+      "day": "M W F",
+      "hours": "12:00pm - 12:50pm"
+    },
+    {
+      "courseID": "14",
+      "instructorID": "10",
+      "name": "Advance Data Structures in C++",
+      "number": "340-0003",
+      "room": "PM 253",
+      "day": "T TH",
+      "hours": "12:30pm - 1:45pm"
+    },
+    {
+      "courseID": "15",
+      "instructorID": "5",
+      "name": "Intro to Assembly Programming",
+      "number": "360-0001",
+      "room": "PM 253",
+      "day": "M W F",
+      "hours": "9:00am - 9:50am"
+    },
+    {
+      "courseID": "16",
+      "instructorID": "11",
+      "name": "Intro to Assembly Programming",
+      "number": "360-0002",
+      "room": "PM 251",
+      "day": "M W",
+      "hours": "2:00pm - 3:15pm"
+    },
+    {
+      "courseID": "17",
+      "instructorID": "3",
+      "name": "Advance Android Mobile Programming",
+      "number": "428-0001",
+      "room": "PM 253",
+      "day": "M W",
+      "hours": "2:00pm - 3:15pm"
+    },
+    {
+      "courseID": "18",
+      "instructorID": "2",
+      "name": "Computer Architecture and Systems Organization",
+      "number": "463-0001",
+      "room": "FR 144",
+      "day": "M W",
+      "hours": "3:30pm - 4:45pm"
+    },
+    {
+      "courseID": "19",
+      "instructorID": "5",
+      "name": "Enterprise Application Environments",
+      "number": "465-0001",
+      "room": "PM 203",
+      "day": "M W F",
+      "hours": "11:00am - 11:50am"
+    },
+    {
+      "courseID": "20",
+      "instructorID": "3",
+      "name": "Databases",
+      "number": "466-0001",
+      "room": "PM 252",
+      "day": "M W F",
+      "hours": "9:00am - 9:50am"
+    },
+    {
+      "courseID": "21",
+      "instructorID": "3",
+      "name": "Databases",
+      "number": "466-0002",
+      "room": "PM 252",
+      "day": "M W F",
+      "hours": "11:00am - 11:50am"
+    },
+    {
+      "courseID": "22",
+      "instructorID": "12",
+      "name": "Databases",
+      "number": "466-0003",
+      "room": "PM 252",
+      "day": "M W",
+      "hours": "2:00pm - 3:15pm"
+    },
+    {
+      "courseID": "23",
+      "instructorID": "12",
+      "name": "Databases",
+      "number": "466-0004",
+      "room": "PM 252",
+      "day": "M W",
+      "hours": "3:30pm - 4:45pm"
+    },
+    {
+      "courseID": "24",
+      "instructorID": "17",
+      "name": "Intro to Software Engineering",
+      "number": "467-0001",
+      "room": "CO 100",
+      "day": "T TH",
+      "hours": "8:00am - 9:15am"
+    },
+    {
+      "courseID": "25",
+      "instructorID": "14",
+      "name": "Programming in Java",
+      "number": "470-00P1",
+      "room": "PM 103",
+      "day": "M W F",
+      "hours": "1:00pm - 1:50pm"
+    },
+    {
+      "courseID": "26",
+      "instructorID": "11",
+      "name": ".NET Programming",
+      "number": "473-0PV3",
+      "room": "PM 203",
+      "day": "M W F",
+      "hours": "9:00am - 9:50am"
+    },
+    {
+      "courseID": "27",
+      "instructorID": "11",
+      "name": ".NET Programming",
+      "number": "473-0PV4",
+      "room": "PM 253",
+      "day": "M W F",
+      "hours": "11:00am - 11:50am"
+    },
+    {
+      "courseID": "28",
+      "instructorID": "10",
+      "name": "Principles of Operating Systems",
+      "number": "480-0001",
+      "room": "PM 253",
+      "day": "T TH",
+      "hours": "9:30am - 10:45am"
+    },
+    {
+      "courseID": "29",
+      "instructorID": "8",
+      "name": "Principles of Operating Systems",
+      "number": "480-0002",
+      "room": "PM 253",
+      "day": "T TH",
+      "hours": "11:00am - 11:50am"
+    },
+    {
+      "courseID": "30",
+      "instructorID": "6",
+      "name": "Object Oriented Design and Programming",
+      "number": "689-0001",
+      "room": "PM 253",
+      "day": "T TH",
+      "hours": "2:00pm - 3:15pm"
     }
   ]
 }
