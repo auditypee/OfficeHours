@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="false"
+    android:orientation="vertical"
+    tools:context="com.example.android.officehours.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/department_string"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".25" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTAI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".4"
+        android:gravity="center_vertical|center_horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonInstructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/instructor_string" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:checked="false"
+            android:text="@string/teaching_assistant_string" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight=".1"
+        android:text="@string/check_string" />
+
+</LinearLayout>

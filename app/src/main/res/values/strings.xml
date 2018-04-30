@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Office Hours</string>
+    <string name="department_string">Department</string>
+    <string name="teaching_assistant_string">Teaching Assistant</string>
+    <string name="instructor_string">Instructor</string>
+    <string name="check_string">CHECK</string>
+    <string-array name="department_choices">
+        <item>Computer Science</item>
+    </string-array>
+</resources>
