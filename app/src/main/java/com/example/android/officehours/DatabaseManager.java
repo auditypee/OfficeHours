@@ -272,7 +272,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         // take the data from the Courses table and TA table
-        String sqlSelectCourses = "SELECT t.taID, c.courseName, t.taName, c.courseNumber " +
+        String sqlSelectCourses = "SELECT t.taID, c.courseID, c.courseName, c.courseNumber, t.taName " +
                 "FROM " + TBLTA + " t, " + TBLCOURSES + " c " +
                 "WHERE t.courseID = c.courseID";
         // take the data from the TAOfficeHours table
@@ -301,9 +301,11 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
             // create an OHCell object that contains the data from the database
             OHCell currCell = new OHCell(
-                    cursor.getString(1),
+                    i,
+                    (Integer.parseInt(cursor.getString(1))),
                     cursor.getString(2),
                     cursor.getString(3),
+                    cursor.getString(4),
                     officeDays);
 
             courseList.add(currCell);
@@ -324,8 +326,9 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public ArrayList<OHCell> selectAllInstructor() {
         SQLiteDatabase db = this.getWritableDatabase();
 
+        //int id, int courseID, String courseName, String courseNo, String instructor, ArrayList<String> officeDays
         // take the data from the Courses table and Instructor table
-        String sqlSelectCourses = "SELECT i.instructorID, c.courseName, i.instName, c.courseNumber " +
+        String sqlSelectCourses = "SELECT i.instructorID, c.courseID, c.courseName, c.courseNumber, i.instName " +
                 "FROM " + TBLINSTRUCTORS + " i, " + TBLCOURSES + " c " +
                 "WHERE i.instructorID = c.instructorID";
         // take the data from the InstructorOfficeHours table
@@ -354,9 +357,11 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
             // create an OHCell object that contains the data from the database
             OHCell currCell = new OHCell(
-                    cursor.getString(1),
+                    i,
+                    (Integer.parseInt(cursor.getString(1))),
                     cursor.getString(2),
                     cursor.getString(3),
+                    cursor.getString(4),
                     officeDays);
 
             courseList.add(currCell);
@@ -368,6 +373,10 @@ public class DatabaseManager extends SQLiteOpenHelper {
         db.close();
 
         return courseList;
+    }
+
+    public void selectAllItems(int courseID) {
+
     }
 
     @Override

@@ -18,11 +18,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private List<OHCell> mOfficeHoursCell;
 
     public static class OHListViewHolder extends RecyclerView.ViewHolder {
+        public TextView courseName, instructorName, courseNo, availability;
         private View ohFeedView;
 
         public OHListViewHolder(View v) {
             super(v);
             ohFeedView = v;
+            courseName = v.findViewById(R.id.textViewCourseName);
+            instructorName = v.findViewById(R.id.textViewInstructor);
+            courseNo = v.findViewById(R.id.textViewCourseNo);
+            availability = v.findViewById(R.id.textViewAvailability);
         }
     }
 
@@ -41,19 +46,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(OHListViewHolder holder, int position) {
         final OHCell ohCell = mOfficeHoursCell.get(position);
-        ((TextView) holder.ohFeedView.findViewById(R.id.textViewCourseName)).setText(ohCell.getCourseName());
-        ((TextView) holder.ohFeedView.findViewById(R.id.textViewInstructor)).setText(ohCell.getInstructor());
-        ((TextView) holder.ohFeedView.findViewById(R.id.textViewCourseNo)).setText(ohCell.getCourseNo());
+        holder.courseName.setText(ohCell.getCourseName());
+        holder.instructorName.setText(ohCell.getInstructor());
+        holder.courseNo.setText(ohCell.getCourseNo());
 
         if (ohCell.getAvailability()) {
-            ((TextView) holder.ohFeedView.findViewById(R.id.textViewAvailability)).setText("Available");
+            holder.availability.setText("Available");
         } else {
-            ((TextView) holder.ohFeedView.findViewById(R.id.textViewAvailability)).setText("Not Available");
+            holder.availability.setText("Not Available");
         }
 
         holder.ohFeedView.setOnClickListener(new Listener(position, mOfficeHoursCell.get(position)));
     }
 
+    //TODO: Implement a long press on an item so it can favorite it. Possibly refresh recyclerView too.
     class Listener implements View.OnClickListener {
         int position;
         OHCell ohCell;

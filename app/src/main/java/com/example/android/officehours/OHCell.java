@@ -1,7 +1,5 @@
 package com.example.android.officehours;
 
-import android.util.Log;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -14,18 +12,22 @@ import java.util.Locale;
  */
 
 public class OHCell {
+    private int id;
+    private int courseID;
     private String courseName;
+    private String courseNo;
     private String instructor;
     private boolean favorite;
-    private String courseNo;
     private ArrayList<String> officeDays;
 
     private static final String TAG = "OHCell";
 
-    public OHCell(String courseName, String instructor, String courseNo, ArrayList<String> officeDays) {
+    public OHCell(int id, int courseID, String courseName, String courseNo, String instructor, ArrayList<String> officeDays) {
+        this.id = id;
+        this.courseID = courseID;
         this.courseName = courseName;
-        this.instructor = instructor;
         this.courseNo = courseNo;
+        this.instructor = instructor;
         this.officeDays = officeDays;
         this.favorite = false;
     }
@@ -68,14 +70,11 @@ public class OHCell {
         boolean isAvailable = false;
 
         for (int i = 0; i < officeDays.size(); i++) {
-            Log.i("Office Availability", officeDays.get(i));
-            Log.i("Instructor", instructor);
             if (checkAvailability(officeDays.get(i))) {
                 isAvailable = true;
                 break;
             }
         }
-        Log.i("Availability", "" + isAvailable);
         return isAvailable;
     }
 
@@ -141,10 +140,6 @@ public class OHCell {
             // takes the current day of the week
             SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.US);
             String dayOfWeek = dateFormat.format(now.getTime());
-
-            //Log.i("StartCMP", time1.toString() + " " + time1.before(date));
-            //Log.i("EndCMP", time2.toString() + " " + time2.after(date));
-            //Log.i("CurrTime", date.toString());
 
             // checks if the current time is between the time range and if current day coincides with officeDay
             if (time1.before(date) && time2.after(date) && day.equals(dayOfWeek))

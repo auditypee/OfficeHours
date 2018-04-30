@@ -2,11 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_margin="8dp"
-    android:focusable="true"
+    android:background="?android:attr/selectableItemBackground"
     android:clickable="true"
-    android:background="?android:attr/selectableItemBackground">
+    android:focusable="true"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -20,7 +19,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:padding="5dp"
-            android:text="Course Name"
+            android:text="@string/course_name_string"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -28,17 +27,17 @@
             android:id="@+id/textViewInstructor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="left|center_vertical"
+            android:gravity="start|center_vertical"
             android:padding="5dp"
-            android:text="Instructor" />
+            android:text="@string/instructor_string" />
 
         <TextView
             android:id="@+id/textViewAvailability"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="left|center_vertical"
+            android:gravity="start|center_vertical"
             android:padding="5dp"
-            android:text="Availability" />
+            android:text="@string/availability_string" />
 
     </LinearLayout>
 
@@ -60,7 +59,7 @@
             android:id="@+id/textViewCourseNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right|center_vertical"
+            android:gravity="end|center_vertical"
             android:padding="5dp"
             android:text="Course #" />
 

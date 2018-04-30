@@ -4,7 +4,12 @@
     <string name="teaching_assistant_string">Teaching Assistant</string>
     <string name="instructor_string">Instructor</string>
     <string name="check_string">CHECK</string>
+    <string name="course_name_string">Course Name</string>
+    <string name="availability_string">Availability</string>
+
     <string-array name="department_choices">
         <item>Computer Science</item>
     </string-array>
+
+    <string name="favorite">FAVORITE</string>
 </resources>

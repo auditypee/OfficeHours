@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 
 import java.util.ArrayList;
 
@@ -23,9 +22,6 @@ public class OfficeHoursList extends AppCompatActivity {
 
     private ArrayList<OHCell> coursesList;
 
-    private SwipeController mSwipeController;
-    private ItemTouchHelper mItemTouchHelper;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +29,6 @@ public class OfficeHoursList extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        // attaches the swipeController to recyclerView so it can be used
-        mSwipeController = new SwipeController();
-        mItemTouchHelper = new ItemTouchHelper(mSwipeController);
-        mItemTouchHelper.attachToRecyclerView(mRecyclerView);
 
         databaseManager = new DatabaseManager(this);
 
