@@ -8,7 +8,16 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Created by Audi PC on 4/22/2018.
+ * Holder for the OHCell class.
+ * Contains the data gathered from the database.
+ * Contains id for the instructor,
+ *          courseId,
+ *          courseName,
+ *          instructorName,
+ *          if course is a favorite,
+ *          officeDays of the instructor
+ *
+ * Also determines if the office hour is available for the instructor.
  */
 
 public class OHCell {
@@ -34,6 +43,9 @@ public class OHCell {
             this.favorite = true;
     }
 
+    /***********************************************************************************************
+     * Getters and Setters
+     **********************************************************************************************/
     public String getCourseName() {
         return courseName;
     }
@@ -156,6 +168,4 @@ public class OHCell {
 
         return isBetween;
     }
-
-
 }

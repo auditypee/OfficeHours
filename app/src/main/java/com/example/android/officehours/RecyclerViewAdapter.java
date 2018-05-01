@@ -1,5 +1,6 @@
 package com.example.android.officehours;
 
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -36,13 +37,22 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     /***********************************************************************************************
+     * Constructor for the RecyclerViewAdapter.
      *
-     * @param officeHoursCell
+     * @param officeHoursCell a list to be used to display on the RecyclerView screen
      **********************************************************************************************/
     public RecyclerViewAdapter(List<OHCell> officeHoursCell) {
         mOfficeHoursCell = officeHoursCell;
     }
 
+    /***********************************************************************************************
+     * Displays an inflated view of the item.
+     *
+     * @param parent the ViewGroup into which the new View will be added after it is bound to an
+     *               adapter position
+     * @param viewType the view type of the View
+     * @return a new ViewHolder that holds a View of the given view type
+     **********************************************************************************************/
     @Override
     public OHListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
@@ -52,21 +62,23 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     /***********************************************************************************************
-     *
-     * @param holder
+     * Displays the data at the specified position.
+     * @param holder represents the contents of the OHCell at the given position
      * @param position
      **********************************************************************************************/
     @Override
-    public void onBindViewHolder(OHListViewHolder holder, final int position) {
+    public void onBindViewHolder(final OHListViewHolder holder, int position) {
         final OHCell ohCell = mOfficeHoursCell.get(position);
         holder.courseName.setText(ohCell.getCourseName());
         holder.instructorName.setText(ohCell.getInstructor());
         holder.courseNo.setText(ohCell.getCourseNo());
 
         if (ohCell.getAvailability()) {
-            holder.availability.setText("Available");
+            holder.availability.setText(R.string.available_string);
+            holder.availability.setTextColor(Color.GREEN);
         } else {
-            holder.availability.setText("Not Available");
+            holder.availability.setText(R.string.unavailable_string);
+            holder.availability.setTextColor(Color.RED);
         }
 
         if (ohCell.isFavorite()) {
@@ -84,7 +96,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.ohFeedView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                onClick.onItemLongClick(position, mOfficeHoursCell.get(position));
+                onClick.onItemLongClick(holder.getAdapterPosition(), mOfficeHoursCell.get(holder.getAdapterPosition()));
                 return true;
             }
         });
