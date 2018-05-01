@@ -272,7 +272,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         // take the data from the Courses table and TA table
-        String sqlSelectCourses = "SELECT t.taID, c.courseID, c.courseName, c.courseNumber, t.taName " +
+        String sqlSelectCourses = "SELECT t.taID, c.courseID, c.courseName, c.courseNumber, t.taName, c.favorite " +
                 "FROM " + TBLTA + " t, " + TBLCOURSES + " c " +
                 "WHERE t.courseID = c.courseID";
         // take the data from the TAOfficeHours table
@@ -306,6 +306,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
                     cursor.getString(2),
                     cursor.getString(3),
                     cursor.getString(4),
+                    (Integer.parseInt(cursor.getString(5))),
                     officeDays);
 
             courseList.add(currCell);
@@ -328,7 +329,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
         //int id, int courseID, String courseName, String courseNo, String instructor, ArrayList<String> officeDays
         // take the data from the Courses table and Instructor table
-        String sqlSelectCourses = "SELECT i.instructorID, c.courseID, c.courseName, c.courseNumber, i.instName " +
+        String sqlSelectCourses = "SELECT i.instructorID, c.courseID, c.courseName, c.courseNumber, i.instName, c.favorite " +
                 "FROM " + TBLINSTRUCTORS + " i, " + TBLCOURSES + " c " +
                 "WHERE i.instructorID = c.instructorID";
         // take the data from the InstructorOfficeHours table
@@ -362,6 +363,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
                     cursor.getString(2),
                     cursor.getString(3),
                     cursor.getString(4),
+                    Integer.parseInt(cursor.getString(5)),
                     officeDays);
 
             courseList.add(currCell);
@@ -373,6 +375,28 @@ public class DatabaseManager extends SQLiteOpenHelper {
         db.close();
 
         return courseList;
+    }
+
+    public void updateFavorite(int courseID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String sqlUpdate = "UPDATE " + TBLCOURSES +
+                " SET favorite = 1" +
+                " WHERE courseID = " + courseID;
+
+        db.execSQL(sqlUpdate);
+        db.close();
+    }
+
+    public void updateUnFavorite(int courseID) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        String sqlUpdate = "UPDATE " + TBLCOURSES +
+                " SET favorite = 0" +
+                " WHERE courseID = " + courseID;
+
+        db.execSQL(sqlUpdate);
+        db.close();
     }
 
     public void selectAllItems(int courseID) {

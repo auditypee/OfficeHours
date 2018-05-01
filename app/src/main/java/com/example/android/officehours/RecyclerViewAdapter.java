@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -16,21 +17,28 @@ import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.OHListViewHolder> {
     private List<OHCell> mOfficeHoursCell;
+    private OnItemLongClicked onClick;
 
     public static class OHListViewHolder extends RecyclerView.ViewHolder {
         public TextView courseName, instructorName, courseNo, availability;
+        public ImageView favoriteFlag;
         private View ohFeedView;
 
         public OHListViewHolder(View v) {
             super(v);
-            ohFeedView = v;
+            ohFeedView = v.findViewById(R.id.cardViewItem);
             courseName = v.findViewById(R.id.textViewCourseName);
             instructorName = v.findViewById(R.id.textViewInstructor);
             courseNo = v.findViewById(R.id.textViewCourseNo);
             availability = v.findViewById(R.id.textViewAvailability);
+            favoriteFlag = v.findViewById(R.id.favoriteFlag);
         }
     }
 
+    /***********************************************************************************************
+     *
+     * @param officeHoursCell
+     **********************************************************************************************/
     public RecyclerViewAdapter(List<OHCell> officeHoursCell) {
         mOfficeHoursCell = officeHoursCell;
     }
@@ -43,8 +51,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return new OHListViewHolder(v);
     }
 
+    /***********************************************************************************************
+     *
+     * @param holder
+     * @param position
+     **********************************************************************************************/
     @Override
-    public void onBindViewHolder(OHListViewHolder holder, int position) {
+    public void onBindViewHolder(OHListViewHolder holder, final int position) {
         final OHCell ohCell = mOfficeHoursCell.get(position);
         holder.courseName.setText(ohCell.getCourseName());
         holder.instructorName.setText(ohCell.getInstructor());
@@ -56,29 +69,37 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             holder.availability.setText("Not Available");
         }
 
-        holder.ohFeedView.setOnClickListener(new Listener(position, mOfficeHoursCell.get(position)));
+        if (ohCell.isFavorite()) {
+            holder.favoriteFlag.setVisibility(View.VISIBLE);
+        } else {
+            holder.favoriteFlag.setVisibility(View.INVISIBLE);
+        }
+
+        holder.ohFeedView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("Click", "Short Click");
+            }
+        });
+        holder.ohFeedView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                onClick.onItemLongClick(position, mOfficeHoursCell.get(position));
+                return true;
+            }
+        });
     }
 
-    //TODO: Implement a long press on an item so it can favorite it. Possibly refresh recyclerView too.
-    class Listener implements View.OnClickListener {
-        int position;
-        OHCell ohCell;
+    /***********************************************************************************************
+     * Creates an interface that allows the functionality of a long click on the activity.
+     * Passes on the OHCell and position clicked on.
+     **********************************************************************************************/
+    public interface OnItemLongClicked {
+        void onItemLongClick(int position, OHCell ohCell);
+    }
 
-        Listener(int position, OHCell ohCell) {
-            this.position = position;
-            this.ohCell = ohCell;
-        }
-
-        @Override
-        public void onClick(View v) {
-            if (ohCell.isFavorite()) {
-                ohCell.setIsFavorite(false);
-                Log.i("Favorite", ohCell.isFavorite() + "");
-            } else {
-                ohCell.setIsFavorite(true);
-                Log.i("Favorite", ohCell.isFavorite() + "");
-            }
-        }
+    public void setOnClick(OnItemLongClicked onClick) {
+        this.onClick = onClick;
     }
 
     @Override

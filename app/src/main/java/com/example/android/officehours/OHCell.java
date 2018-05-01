@@ -17,19 +17,21 @@ public class OHCell {
     private String courseName;
     private String courseNo;
     private String instructor;
-    private boolean favorite;
+    private boolean favorite = false;
     private ArrayList<String> officeDays;
 
     private static final String TAG = "OHCell";
 
-    public OHCell(int id, int courseID, String courseName, String courseNo, String instructor, ArrayList<String> officeDays) {
+    public OHCell(int id, int courseID, String courseName, String courseNo, String instructor, int favorite, ArrayList<String> officeDays) {
         this.id = id;
         this.courseID = courseID;
         this.courseName = courseName;
         this.courseNo = courseNo;
         this.instructor = instructor;
         this.officeDays = officeDays;
-        this.favorite = false;
+
+        if (favorite != 0)
+            this.favorite = true;
     }
 
     public String getCourseName() {
@@ -48,6 +50,10 @@ public class OHCell {
         return courseNo;
     }
 
+    public int getCourseID() {
+        return courseID;
+    }
+
     public String getOfficeDays() {
         String res = "";
 
@@ -56,7 +62,6 @@ public class OHCell {
         return res;
     }
 
-    //TODO: Update the selected item's data to be favorited
     public void setIsFavorite(boolean favorite) {
         this.favorite = favorite;
     }
